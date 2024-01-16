@@ -1,0 +1,12 @@
+1º Creamos el código en un archivo .java, con el nombre siempre de la clase, ejemplo, programa.java (dentro de 
+		una carpeta llamada igual que el proyecto)
+2º Creamos el archivo .class de esta manera
+		javac programa.java
+3º Creamos el archivo Manifest.txt que pondrá lo siguiente
+		Manifest-version: 1.0
+		Created-By: 1.0 (DAW)
+		Main-Class: programa
+4º Creamos el archivo programa.jar
+		jar cfm programa.jar Manifest.txt programa.class
+5º Ejectuamos el programa.jar
+		java -cp programa.jar programa
